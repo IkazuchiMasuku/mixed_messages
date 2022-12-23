@@ -2,7 +2,8 @@
     <head>
         <script src="script.js"></script>
     </head>
-    <body>
-        <div style="width: 300px; margin: 0 auto;"></div>
+    <body onload="loadMessage()">
+        <div id ="display" style="width: 300px; height: 100px; margin: 0 auto;"></div>
+        <button onClick="loadMessage()" style="display: block; margin: auto;">Reload</button>
     </body>
 </html>

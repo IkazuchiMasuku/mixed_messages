@@ -11,4 +11,8 @@ const randomText = (array1, array2, array3) => {
     return array1[randomNum()] + array2[randomNum()] + array3[randomNum()];
 }
 
-console.log(randomText(prefixes, infixes, suffixes));
+const loadMessage = () => {
+    let display = document.getElementById("display");
+    display.innerHTML = randomText(prefixes, infixes, suffixes);
+}
+
